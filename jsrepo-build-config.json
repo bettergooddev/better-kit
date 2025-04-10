@@ -11,6 +11,10 @@
 		"blocks",
 		"fields"
 	],
+	"includeDeps": [
+		"@/utilities/updateRenderBlocks",
+		"@/utilities/post-jsrepo"
+	],
 	"excludeDeps": [],
 	"includeBlocks": [],
 	"includeCategories": [],
