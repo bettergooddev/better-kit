@@ -1,12 +1,16 @@
 {
 	"$schema": "https://unpkg.com/jsrepo@1.47.0/schemas/registry-config.json",
 	"dirs": [
-		"./wards"
+		"./src"
 	],
+	"allowSubdirectories": false,
 	"doNotListBlocks": [],
 	"doNotListCategories": [],
 	"listBlocks": [],
-	"listCategories": [],
+	"listCategories": [
+		"blocks",
+		"fields"
+	],
 	"excludeDeps": [],
 	"includeBlocks": [],
 	"includeCategories": [],

@@ -5,7 +5,7 @@
 			"blocks": [
 				{
 					"name": "CallToAction",
-					"directory": "wards/blocks/CallToAction",
+					"directory": "src/blocks/CallToAction",
 					"category": "blocks",
 					"tests": false,
 					"subdirectory": true,
@@ -30,7 +30,7 @@
 				},
 				{
 					"name": "FAQ",
-					"directory": "wards/blocks/FAQ",
+					"directory": "src/blocks/FAQ",
 					"category": "blocks",
 					"tests": false,
 					"subdirectory": true,
@@ -56,7 +56,7 @@
 			"blocks": [
 				{
 					"name": "link",
-					"directory": "wards/fields",
+					"directory": "src/fields",
 					"category": "fields",
 					"tests": false,
 					"subdirectory": false,
@@ -73,7 +73,7 @@
 				},
 				{
 					"name": "linkGroup",
-					"directory": "wards/fields",
+					"directory": "src/fields",
 					"category": "fields",
 					"tests": false,
 					"subdirectory": false,
