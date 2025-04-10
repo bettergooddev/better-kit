@@ -1,0 +1,98 @@
+{
+	"categories": [
+		{
+			"name": "blocks",
+			"blocks": [
+				{
+					"name": "CallToAction",
+					"directory": "wards/blocks/CallToAction",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"fields/linkGroup"
+					],
+					"dependencies": [
+						"react",
+						"motion",
+						"payload",
+						"@payloadcms/richtext-lexical"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../fields/linkGroup": "{{fields/linkGroup}}"
+					}
+				},
+				{
+					"name": "FAQ",
+					"directory": "wards/blocks/FAQ",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"QARowLabel.tsx",
+						"config.ts"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"motion",
+						"@payloadcms/ui",
+						"payload"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				}
+			]
+		},
+		{
+			"name": "fields",
+			"blocks": [
+				{
+					"name": "link",
+					"directory": "wards/fields",
+					"category": "fields",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"link.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "linkGroup",
+					"directory": "wards/fields",
+					"category": "fields",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"linkGroup.ts"
+					],
+					"localDependencies": [
+						"fields/link"
+					],
+					"_imports_": {
+						"./link": "{{fields/link}}"
+					},
+					"dependencies": [
+						"payload"
+					],
+					"devDependencies": []
+				}
+			]
+		}
+	]
+}
