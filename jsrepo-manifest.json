@@ -1,50 +1,104 @@
 {
 	"categories": [
 		{
-			"name": "blocks",
+			"name": "components",
 			"blocks": [
 				{
 					"name": "CallToAction",
-					"directory": "src/blocks/CallToAction",
-					"category": "blocks",
+					"directory": "src/components/CallToAction",
+					"category": "components",
 					"tests": false,
 					"subdirectory": true,
 					"list": true,
-					"files": [
-						"Component.tsx",
-						"config.ts"
-					],
-					"localDependencies": [
-						"fields/linkGroup"
-					],
-					"dependencies": [
-						"react",
-						"motion",
-						"payload",
-						"@payloadcms/richtext-lexical"
-					],
+					"files": [],
+					"localDependencies": [],
+					"dependencies": [],
 					"devDependencies": [],
-					"_imports_": {
-						"../../fields/linkGroup": "{{fields/linkGroup}}"
-					}
+					"_imports_": {}
 				},
 				{
-					"name": "FAQ",
-					"directory": "src/blocks/FAQ",
-					"category": "blocks",
+					"name": "Media",
+					"directory": "src/components/Media",
+					"category": "components",
 					"tests": false,
 					"subdirectory": true,
 					"list": true,
 					"files": [
-						"Component.tsx",
-						"QARowLabel.tsx",
-						"config.ts"
+						"index.tsx",
+						"types.ts"
 					],
 					"localDependencies": [],
 					"dependencies": [
-						"motion",
-						"@payloadcms/ui",
-						"payload"
+						"react",
+						"next"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "Testimonials",
+					"directory": "src/components/Testimonials",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"TestimonialsCard.tsx",
+						"TestimonialsCarousel.tsx",
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"components/Media",
+						"utilities/appendKeys"
+					],
+					"dependencies": [
+						"@radix-ui/react-avatar"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../ui/carousel": "{{components/ui}}/carousel",
+						"../Media/ImageMedia": "{{components/Media}}/ImageMedia",
+						"../Media": "{{components/Media}}",
+						"../ui/badge": "{{components/ui}}/badge",
+						"@/utilities/appendKeys": "{{utilities/appendKeys}}"
+					}
+				},
+				{
+					"name": "ui",
+					"directory": "src/components/ui",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"accordion.tsx",
+						"avatar.tsx",
+						"badge.tsx",
+						"better-good-tag.tsx",
+						"button.tsx",
+						"card.tsx",
+						"carousel.tsx",
+						"checkbox.tsx",
+						"input.tsx",
+						"label.tsx",
+						"pagination.tsx",
+						"select.tsx",
+						"textarea.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"react",
+						"@radix-ui/react-accordion",
+						"lucide-react",
+						"@radix-ui/react-avatar",
+						"class-variance-authority",
+						"next",
+						"@radix-ui/react-slot",
+						"embla-carousel-react",
+						"@radix-ui/react-checkbox",
+						"@radix-ui/react-label",
+						"@radix-ui/react-select"
 					],
 					"devDependencies": [],
 					"_imports_": {}
@@ -52,43 +106,22 @@
 			]
 		},
 		{
-			"name": "fields",
+			"name": "utilities",
 			"blocks": [
 				{
-					"name": "link",
-					"directory": "src/fields",
-					"category": "fields",
+					"name": "appendKeys",
+					"directory": "src/utilities",
+					"category": "utilities",
 					"tests": false,
 					"subdirectory": false,
 					"list": true,
 					"files": [
-						"link.ts"
+						"appendKeys.ts"
 					],
 					"localDependencies": [],
 					"_imports_": {},
 					"dependencies": [
-						"payload"
-					],
-					"devDependencies": []
-				},
-				{
-					"name": "linkGroup",
-					"directory": "src/fields",
-					"category": "fields",
-					"tests": false,
-					"subdirectory": false,
-					"list": true,
-					"files": [
-						"linkGroup.ts"
-					],
-					"localDependencies": [
-						"fields/link"
-					],
-					"_imports_": {
-						"./link": "{{fields/link}}"
-					},
-					"dependencies": [
-						"payload"
+						"uuid"
 					],
 					"devDependencies": []
 				}

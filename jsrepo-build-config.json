@@ -1,20 +1,12 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.47.0/schemas/registry-config.json",
+	"$schema": "https://unpkg.com/jsrepo@1.47.1/schemas/registry-config.json",
 	"dirs": [
 		"./src"
 	],
-	"allowSubdirectories": false,
 	"doNotListBlocks": [],
 	"doNotListCategories": [],
 	"listBlocks": [],
-	"listCategories": [
-		"blocks",
-		"fields"
-	],
-	"includeDeps": [
-		"@/utilities/updateRenderBlocks",
-		"@/utilities/post-jsrepo"
-	],
+	"listCategories": [],
 	"excludeDeps": [],
 	"includeBlocks": [],
 	"includeCategories": [],
