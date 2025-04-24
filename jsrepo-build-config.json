@@ -1,16 +1,16 @@
 {
-	"$schema": "https://unpkg.com/jsrepo@1.47.1/schemas/registry-config.json",
-	"dirs": [
-		"./src"
-	],
-	"doNotListBlocks": [],
-	"doNotListCategories": [],
-	"listBlocks": [],
-	"listCategories": [],
-	"excludeDeps": [],
-	"includeBlocks": [],
-	"includeCategories": [],
-	"excludeBlocks": [],
-	"excludeCategories": [],
-	"preview": false
+  "$schema": "https://unpkg.com/jsrepo@1.47.1/schemas/registry-config.json",
+  "dirs": ["./src"],
+  "watermark": false,
+  "allowSubdirectories": true,
+  "doNotListBlocks": ["ui"],
+  "doNotListCategories": ["access"],
+  "listBlocks": [],
+  "listCategories": [],
+  "excludeDeps": [],
+  "includeBlocks": [],
+  "includeCategories": [],
+  "excludeBlocks": [],
+  "excludeCategories": [],
+  "preview": false
 }

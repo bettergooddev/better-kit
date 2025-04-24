@@ -1,21 +1,76 @@
 {
 	"categories": [
 		{
-			"name": "components",
+			"name": "access",
 			"blocks": [
 				{
-					"name": "CallToAction",
-					"directory": "src/components/CallToAction",
-					"category": "components",
+					"name": "anyone",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"anyone.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "authenticated",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"authenticated.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "collections",
+			"blocks": [
+				{
+					"name": "Testimonial-1",
+					"directory": "src/collections/Testimonial-1",
+					"category": "collections",
 					"tests": false,
 					"subdirectory": true,
 					"list": true,
-					"files": [],
-					"localDependencies": [],
-					"dependencies": [],
+					"files": [
+						"hooks/syncTestimonialsWithPage.tsx",
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/anyone",
+						"access/authenticated"
+					],
+					"dependencies": [
+						"payload"
+					],
 					"devDependencies": [],
-					"_imports_": {}
-				},
+					"_imports_": {
+						"../../access/anyone": "{{access/anyone}}",
+						"../../access/authenticated": "{{access/authenticated}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "components",
+			"blocks": [
 				{
 					"name": "Media",
 					"directory": "src/components/Media",
@@ -24,20 +79,22 @@
 					"subdirectory": true,
 					"list": true,
 					"files": [
+						"ImageMedia/index.tsx",
+						"VideoMedia/index.tsx",
 						"index.tsx",
 						"types.ts"
 					],
 					"localDependencies": [],
 					"dependencies": [
-						"react",
-						"next"
+						"next",
+						"react"
 					],
 					"devDependencies": [],
 					"_imports_": {}
 				},
 				{
-					"name": "Testimonials",
-					"directory": "src/components/Testimonials",
+					"name": "Testimonial-1",
+					"directory": "src/components/Testimonial-1",
 					"category": "components",
 					"tests": false,
 					"subdirectory": true,
@@ -49,8 +106,7 @@
 					],
 					"localDependencies": [
 						"components/ui",
-						"components/Media",
-						"utilities/appendKeys"
+						"components/Media"
 					],
 					"dependencies": [
 						"@radix-ui/react-avatar"
@@ -60,8 +116,7 @@
 						"../ui/carousel": "{{components/ui}}/carousel",
 						"../Media/ImageMedia": "{{components/Media}}/ImageMedia",
 						"../Media": "{{components/Media}}",
-						"../ui/badge": "{{components/ui}}/badge",
-						"@/utilities/appendKeys": "{{utilities/appendKeys}}"
+						"../ui/badge": "{{components/ui}}/badge"
 					}
 				},
 				{
@@ -70,7 +125,7 @@
 					"category": "components",
 					"tests": false,
 					"subdirectory": true,
-					"list": true,
+					"list": false,
 					"files": [
 						"accordion.tsx",
 						"avatar.tsx",
@@ -102,28 +157,6 @@
 					],
 					"devDependencies": [],
 					"_imports_": {}
-				}
-			]
-		},
-		{
-			"name": "utilities",
-			"blocks": [
-				{
-					"name": "appendKeys",
-					"directory": "src/utilities",
-					"category": "utilities",
-					"tests": false,
-					"subdirectory": false,
-					"list": true,
-					"files": [
-						"appendKeys.ts"
-					],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [
-						"uuid"
-					],
-					"devDependencies": []
 				}
 			]
 		}
