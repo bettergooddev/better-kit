@@ -1,45 +1,6 @@
 {
 	"categories": [
 		{
-			"name": "access",
-			"blocks": [
-				{
-					"name": "anyone",
-					"directory": "src/access",
-					"category": "access",
-					"tests": false,
-					"subdirectory": false,
-					"list": false,
-					"files": [
-						"anyone.ts"
-					],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [
-						"payload"
-					],
-					"devDependencies": []
-				},
-				{
-					"name": "authenticated",
-					"directory": "src/access",
-					"category": "access",
-					"tests": false,
-					"subdirectory": false,
-					"list": false,
-					"files": [
-						"authenticated.ts"
-					],
-					"localDependencies": [],
-					"_imports_": {},
-					"dependencies": [
-						"payload"
-					],
-					"devDependencies": []
-				}
-			]
-		},
-		{
 			"name": "collections",
 			"blocks": [
 				{
@@ -53,18 +14,12 @@
 						"hooks/syncTestimonialsWithPage.tsx",
 						"index.ts"
 					],
-					"localDependencies": [
-						"access/anyone",
-						"access/authenticated"
-					],
+					"localDependencies": [],
 					"dependencies": [
 						"payload"
 					],
 					"devDependencies": [],
-					"_imports_": {
-						"../../access/anyone": "{{access/anyone}}",
-						"../../access/authenticated": "{{access/authenticated}}"
-					}
+					"_imports_": {}
 				}
 			]
 		},
@@ -105,58 +60,41 @@
 						"index.tsx"
 					],
 					"localDependencies": [
-						"components/ui",
-						"components/Media"
+						"components/Media",
+						"utilities/appendKeys"
 					],
 					"dependencies": [
-						"@radix-ui/react-avatar"
+						"@radix-ui/react-avatar",
+						"@components/ui"
 					],
 					"devDependencies": [],
 					"_imports_": {
-						"../ui/carousel": "{{components/ui}}/carousel",
 						"../Media/ImageMedia": "{{components/Media}}/ImageMedia",
 						"../Media": "{{components/Media}}",
-						"../ui/badge": "{{components/ui}}/badge"
+						"../../utilities/appendKeys": "{{utilities/appendKeys}}"
 					}
-				},
+				}
+			]
+		},
+		{
+			"name": "utilities",
+			"blocks": [
 				{
-					"name": "ui",
-					"directory": "src/components/ui",
-					"category": "components",
+					"name": "appendKeys",
+					"directory": "src/utilities",
+					"category": "utilities",
 					"tests": false,
-					"subdirectory": true,
-					"list": false,
+					"subdirectory": false,
+					"list": true,
 					"files": [
-						"accordion.tsx",
-						"avatar.tsx",
-						"badge.tsx",
-						"better-good-tag.tsx",
-						"button.tsx",
-						"card.tsx",
-						"carousel.tsx",
-						"checkbox.tsx",
-						"input.tsx",
-						"label.tsx",
-						"pagination.tsx",
-						"select.tsx",
-						"textarea.tsx"
+						"appendKeys.ts"
 					],
 					"localDependencies": [],
+					"_imports_": {},
 					"dependencies": [
-						"react",
-						"@radix-ui/react-accordion",
-						"lucide-react",
-						"@radix-ui/react-avatar",
-						"class-variance-authority",
-						"next",
-						"@radix-ui/react-slot",
-						"embla-carousel-react",
-						"@radix-ui/react-checkbox",
-						"@radix-ui/react-label",
-						"@radix-ui/react-select"
+						"uuid"
 					],
-					"devDependencies": [],
-					"_imports_": {}
+					"devDependencies": []
 				}
 			]
 		}

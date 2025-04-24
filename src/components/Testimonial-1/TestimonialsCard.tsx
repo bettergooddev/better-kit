@@ -1,12 +1,12 @@
 import { Avatar, AvatarImage, AvatarFallback } from '@radix-ui/react-avatar'
 
-import { CarouselItem } from '../ui/carousel'
+import { CarouselItem } from '@components/ui/carousel'
 import { Offering, Testimonial } from '@/payload-types'
 import { cn } from '@/utilities/ui'
 import { ImageMedia } from '../Media/ImageMedia'
 import { Media } from '../Media'
 import { getOfferingType } from '@/collections/Offerings/hooks/getOfferingType'
-import { Badge } from '../ui/badge'
+import { Badge } from '@components/ui/badge'
 
 export function TestimonialsCard({ testimonial, className }: { testimonial: Testimonial; className: string }) {
   const { standout, body, offering } = testimonial
