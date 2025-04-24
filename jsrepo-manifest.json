@@ -64,8 +64,7 @@
 						"utilities/appendKeys"
 					],
 					"dependencies": [
-						"@radix-ui/react-avatar",
-						"@components/ui"
+						"@radix-ui/react-avatar"
 					],
 					"devDependencies": [],
 					"_imports_": {
