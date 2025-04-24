@@ -3,7 +3,7 @@
   "dirs": ["./src"],
   "watermark": false,
   "allowSubdirectories": true,
-  "doNotListBlocks": ["ui"],
+  "doNotListBlocks": ["ui", "Media"],
   "doNotListCategories": ["access"],
   "listBlocks": [],
   "listCategories": [],

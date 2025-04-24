@@ -77,7 +77,7 @@
 					"category": "components",
 					"tests": false,
 					"subdirectory": true,
-					"list": true,
+					"list": false,
 					"files": [
 						"ImageMedia/index.tsx",
 						"VideoMedia/index.tsx",
@@ -127,15 +127,33 @@
 					"subdirectory": true,
 					"list": false,
 					"files": [
+						"accordion.tsx",
+						"avatar.tsx",
 						"badge.tsx",
-						"carousel.tsx"
+						"better-good-tag.tsx",
+						"button.tsx",
+						"card.tsx",
+						"carousel.tsx",
+						"checkbox.tsx",
+						"input.tsx",
+						"label.tsx",
+						"pagination.tsx",
+						"select.tsx",
+						"textarea.tsx"
 					],
 					"localDependencies": [],
 					"dependencies": [
 						"react",
+						"@radix-ui/react-accordion",
+						"lucide-react",
+						"@radix-ui/react-avatar",
 						"class-variance-authority",
+						"next",
+						"@radix-ui/react-slot",
 						"embla-carousel-react",
-						"lucide-react"
+						"@radix-ui/react-checkbox",
+						"@radix-ui/react-label",
+						"@radix-ui/react-select"
 					],
 					"devDependencies": [],
 					"_imports_": {}
