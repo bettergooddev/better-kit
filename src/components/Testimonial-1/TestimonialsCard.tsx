@@ -8,6 +8,8 @@ import { Media } from '../Media'
 import { getOfferingType } from '@/collections/Offerings/hooks/getOfferingType'
 import { Badge } from '@/components/ui/badge'
 
+
+
 export function TestimonialsCard({ testimonial, className }: { testimonial: Testimonial; className: string }) {
   const { standout, body, offering } = testimonial
   const { name, role, image } = testimonial.author
