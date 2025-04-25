@@ -14,7 +14,7 @@
   "listBlocks": [],
   "listCategories": [],
   "excludeDeps": ["next", "react"],
-  "includeBlocks": [],
+  "includeBlocks": ["Testimonials"],
   "includeCategories": [],
   "excludeBlocks": ["RichText"],
   "excludeCategories": ["app", "Header", "Code", "BeforeDashboard", "AdminBar"],
