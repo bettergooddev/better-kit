@@ -5,7 +5,11 @@ import {
   SerializedLinkNode,
   type DefaultTypedEditorState,
 } from '@payloadcms/richtext-lexical'
-import { JSXConvertersFunction, LinkJSXConverter, RichText as ConvertRichText } from '@payloadcms/richtext-lexical/react'
+import {
+  JSXConvertersFunction,
+  LinkJSXConverter,
+  RichText as ConvertRichText,
+} from '@payloadcms/richtext-lexical/react'
 
 import { CodeBlock, CodeBlockProps } from '@/blocks/Code/Component'
 
@@ -18,7 +22,9 @@ import { BannerBlock } from '@/blocks/Banner/Component'
 import { CallToActionBlock } from '@/blocks/CallToAction/Component'
 import { cn } from '@/utilities/ui'
 
-type NodeTypes = DefaultNodeTypes | SerializedBlockNode<CTABlockProps | MediaBlockProps | BannerBlockProps | CodeBlockProps>
+type NodeTypes =
+  | DefaultNodeTypes
+  | SerializedBlockNode<CTABlockProps | MediaBlockProps | BannerBlockProps | CodeBlockProps>
 
 const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
   const { value, relationTo } = linkNode.fields.doc!
@@ -36,7 +42,7 @@ const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) 
     banner: ({ node }) => <BannerBlock className="col-start-2 mb-4" {...node.fields} />,
     mediaBlock: ({ node }) => (
       <MediaBlock
-        className="col-span-3 col-start-1"
+        className="col-start-1 col-span-3"
         imgClassName="m-0"
         {...node.fields}
         captionClassName="mx-auto max-w-[48rem]"
@@ -65,7 +71,7 @@ export default function RichText(props: Props) {
         {
           container: enableGutter,
           'max-w-none': !enableGutter,
-          'prose mx-auto md:prose-md dark:prose-invert': enableProse,
+          'mx-auto prose md:prose-md dark:prose-invert': enableProse,
         },
         className,
       )}

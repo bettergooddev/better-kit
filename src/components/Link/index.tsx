@@ -21,11 +21,23 @@ type CMSLinkType = {
 }
 
 export const CMSLink: React.FC<CMSLinkType> = (props) => {
-  const { type, appearance = 'inline', children, className, label, newTab, reference, size: sizeFromProps, url } = props
+  const {
+    type,
+    appearance = 'inline',
+    children,
+    className,
+    label,
+    newTab,
+    reference,
+    size: sizeFromProps,
+    url,
+  } = props
 
   const href =
     type === 'reference' && typeof reference?.value === 'object' && reference.value.slug
-      ? `${reference?.relationTo !== 'pages' ? `/${reference?.relationTo}` : ''}/${reference.value.slug}`
+      ? `${reference?.relationTo !== 'pages' ? `/${reference?.relationTo}` : ''}/${
+          reference.value.slug
+        }`
       : url
 
   if (!href) return null
