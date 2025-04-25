@@ -1,8 +1,8 @@
-import { Testimonial } from 'src/payload-types'
+import { Testimonial } from '../../payload-types'
 import { Carousel, CarouselContent, CarouselNext, CarouselPrevious } from '../ui/carousel'
 import { TestimonialsCard } from './TestimonialsCard'
 import { appendKeys } from '../../utilities/appendKeys'
-import type { TestimonialsBlock as TestimonialsBlockProps } from 'src/payload-types'
+import type { TestimonialsBlock as TestimonialsBlockProps } from '../../payload-types'
 
 export function TestimonialsCarousel({
   testimonials: testimonialsProp,

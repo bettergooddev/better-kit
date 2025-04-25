@@ -1,8 +1,8 @@
-import { cn } from 'src/utilities/ui'
+import { cn } from '../../utilities/ui'
 import React from 'react'
-import RichText from 'src/components/RichText'
+import RichText from '../../components/RichText'
 
-import type { ContentBlock as ContentBlockProps } from 'src/payload-types'
+import type { ContentBlock as ContentBlockProps } from '../../payload-types'
 
 import { CMSLink } from '../../components/Link'
 
