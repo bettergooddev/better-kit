@@ -1,11 +1,11 @@
 import { Avatar, AvatarFallback } from '@radix-ui/react-avatar'
 
-import { CarouselItem } from '@/components/ui/carousel'
-import { Testimonial } from '@/payload-types'
-import { cn } from '@/utilities/ui'
-import { ImageMedia } from '@/components/Media/ImageMedia'
-import { Media } from '@/components/Media'
-import { Badge } from '@/components/ui/badge'
+import { CarouselItem } from 'src/components/ui/carousel'
+import { Testimonial } from 'src/payload-types'
+import { cn } from 'src/utilities/ui'
+import { ImageMedia } from 'src/components/Media/ImageMedia'
+import { Media } from 'src/components/Media'
+import { Badge } from 'src/components/ui/badge'
 
 export function TestimonialsCard({
   testimonial,

@@ -1,9 +1,9 @@
-import { cn } from '@/utilities/ui'
+import { cn } from 'src/utilities/ui'
 import React from 'react'
-import RichText from '@/components/RichText'
+import RichText from 'src/components/RichText'
 
-import type { TestimonialsBlock as TestimonialsBlockProps } from '@/payload-types'
-import { TestimonialsCarousel } from '@/components/Testimonials'
+import type { TestimonialsBlock as TestimonialsBlockProps } from 'src/payload-types'
+import { TestimonialsCarousel } from 'src/components/Testimonials'
 
 export const TestimonialsBlock: React.FC<TestimonialsBlockProps> = (props) => {
   const { heading, testimonials } = props
