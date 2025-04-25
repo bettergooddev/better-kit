@@ -1,0 +1,3389 @@
+{
+	"categories": [
+		{
+			"name": "Footer",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/Footer",
+					"category": "Footer",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"utilities/getGlobals",
+						"payload-types/index",
+						"providers/Theme",
+						"components/Link",
+						"components/Logo"
+					],
+					"_imports_": {
+						"../utilities/getGlobals": "{{utilities/getGlobals}}",
+						"../payload-types": "{{payload-types/index}}",
+						"../providers/Theme/ThemeSelector": "{{providers/Theme}}/ThemeSelector",
+						"../components/Link": "{{components/Link}}",
+						"../components/Logo/Logo": "{{components/Logo}}/Logo"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "RowLabel",
+					"directory": "src/Footer",
+					"category": "Footer",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"RowLabel.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}"
+					},
+					"dependencies": [
+						"@payloadcms/ui@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/Footer",
+					"category": "Footer",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [
+						"fields/link",
+						"Footer/hooks"
+					],
+					"_imports_": {
+						"../fields/link": "{{fields/link}}",
+						"./hooks/revalidateFooter": "{{Footer/hooks}}/revalidateFooter"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "hooks",
+					"directory": "src/Footer/hooks",
+					"category": "Footer",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"revalidateFooter.ts"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				}
+			]
+		},
+		{
+			"name": "access",
+			"blocks": [
+				{
+					"name": "anyone",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"anyone.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "authenticated",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"authenticated.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "authenticatedOrPublished",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"authenticatedOrPublished.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "blocks",
+			"blocks": [
+				{
+					"name": "ArchiveBlock",
+					"directory": "src/blocks/ArchiveBlock",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"payload.config.ts/index",
+						"components/RichText",
+						"components/CollectionArchive"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"@payload-config": "{{payload.config.ts/index}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/CollectionArchive": "{{components/CollectionArchive}}"
+					}
+				},
+				{
+					"name": "Banner",
+					"directory": "src/blocks/Banner",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/ui",
+						"components/RichText"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}"
+					}
+				},
+				{
+					"name": "CallToAction",
+					"directory": "src/blocks/CallToAction",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"components/RichText",
+						"components/Link",
+						"fields/linkGroup"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/Link": "{{components/Link}}",
+						"../../fields/linkGroup": "{{fields/linkGroup}}"
+					}
+				},
+				{
+					"name": "Code",
+					"directory": "src/blocks/Code",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.client.tsx",
+						"Component.tsx",
+						"CopyButton.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"components/ui"
+					],
+					"dependencies": [
+						"prism-react-renderer@^2.3.1",
+						"@payloadcms/ui@3.33.0",
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../components/ui/button": "{{components/ui}}/button"
+					}
+				},
+				{
+					"name": "Content",
+					"directory": "src/blocks/Content",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Link",
+						"fields/link"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Link": "{{components/Link}}",
+						"../../fields/link": "{{fields/link}}"
+					}
+				},
+				{
+					"name": "Form",
+					"directory": "src/blocks/Form",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts",
+						"fields.tsx"
+					],
+					"localDependencies": [
+						"components/RichText",
+						"components/ui",
+						"utilities/getURL"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4",
+						"@payloadcms/richtext-lexical@3.33.0",
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/ui/button": "{{components/ui}}/button",
+						"../../utilities/getURL": "{{utilities/getURL}}"
+					}
+				},
+				{
+					"name": "MediaBlock",
+					"directory": "src/blocks/MediaBlock",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Media"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Media": "{{components/Media}}"
+					}
+				},
+				{
+					"name": "RelatedPosts",
+					"directory": "src/blocks/RelatedPosts",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"components/RichText",
+						"payload-types/index",
+						"components/Card"
+					],
+					"dependencies": [
+						"clsx@^2.1.1",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Card": "{{components/Card}}"
+					}
+				},
+				{
+					"name": "RenderBlocks",
+					"directory": "src/blocks",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"RenderBlocks.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"blocks/ArchiveBlock",
+						"blocks/CallToAction",
+						"blocks/Content",
+						"blocks/Form",
+						"blocks/MediaBlock",
+						"blocks/Testimonials"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}",
+						"./ArchiveBlock/Component": "{{blocks/ArchiveBlock}}/Component",
+						"./CallToAction/Component": "{{blocks/CallToAction}}/Component",
+						"./Content/Component": "{{blocks/Content}}/Component",
+						"./Form/Component": "{{blocks/Form}}/Component",
+						"./MediaBlock/Component": "{{blocks/MediaBlock}}/Component",
+						"./Testimonials/Component": "{{blocks/Testimonials}}/Component"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "Testimonials",
+					"directory": "src/blocks/Testimonials",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Testimonials"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Testimonials": "{{components/Testimonials}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "collections",
+			"blocks": [
+				{
+					"name": "Categories",
+					"directory": "src/collections",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Categories.ts"
+					],
+					"localDependencies": [
+						"access/anyone",
+						"access/authenticated",
+						"fields/slug"
+					],
+					"_imports_": {
+						"../access/anyone": "{{access/anyone}}",
+						"../access/authenticated": "{{access/authenticated}}",
+						"../fields/slug": "{{fields/slug}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "Media",
+					"directory": "src/collections",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Media.ts"
+					],
+					"localDependencies": [
+						"access/anyone",
+						"access/authenticated"
+					],
+					"_imports_": {
+						"../access/anyone": "{{access/anyone}}",
+						"../access/authenticated": "{{access/authenticated}}"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "Pages",
+					"directory": "src/collections/Pages",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/authenticated",
+						"access/authenticatedOrPublished",
+						"blocks/ArchiveBlock",
+						"blocks/CallToAction",
+						"blocks/Content",
+						"blocks/Form",
+						"blocks/MediaBlock",
+						"blocks/Testimonials",
+						"heros/config",
+						"fields/slug",
+						"hooks/populatePublishedAt",
+						"utilities/generatePreviewPath"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/plugin-seo@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../access/authenticated": "{{access/authenticated}}",
+						"../../access/authenticatedOrPublished": "{{access/authenticatedOrPublished}}",
+						"../../blocks/ArchiveBlock/config": "{{blocks/ArchiveBlock}}/config",
+						"../../blocks/CallToAction/config": "{{blocks/CallToAction}}/config",
+						"../../blocks/Content/config": "{{blocks/Content}}/config",
+						"../../blocks/Form/config": "{{blocks/Form}}/config",
+						"../../blocks/MediaBlock/config": "{{blocks/MediaBlock}}/config",
+						"../../blocks/Testimonials/config": "{{blocks/Testimonials}}/config",
+						"../../heros/config": "{{heros/config}}",
+						"../../fields/slug": "{{fields/slug}}",
+						"../../hooks/populatePublishedAt": "{{hooks/populatePublishedAt}}",
+						"../../utilities/generatePreviewPath": "{{utilities/generatePreviewPath}}"
+					}
+				},
+				{
+					"name": "Posts",
+					"directory": "src/collections/Posts",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/authenticated",
+						"access/authenticatedOrPublished",
+						"blocks/Banner",
+						"blocks/Code",
+						"blocks/MediaBlock",
+						"utilities/generatePreviewPath",
+						"fields/slug"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0",
+						"@payloadcms/plugin-seo@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../access/authenticated": "{{access/authenticated}}",
+						"../../access/authenticatedOrPublished": "{{access/authenticatedOrPublished}}",
+						"../../blocks/Banner/config": "{{blocks/Banner}}/config",
+						"../../blocks/Code/config": "{{blocks/Code}}/config",
+						"../../blocks/MediaBlock/config": "{{blocks/MediaBlock}}/config",
+						"../../utilities/generatePreviewPath": "{{utilities/generatePreviewPath}}",
+						"../../fields/slug": "{{fields/slug}}"
+					}
+				},
+				{
+					"name": "Testimonials",
+					"directory": "src/collections/Testimonials",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/anyone",
+						"access/authenticated"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../access/anyone": "{{access/anyone}}",
+						"../../access/authenticated": "{{access/authenticated}}"
+					}
+				},
+				{
+					"name": "Users",
+					"directory": "src/collections/Users",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/authenticated"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../access/authenticated": "{{access/authenticated}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "components",
+			"blocks": [
+				{
+					"name": "AdminBar",
+					"directory": "src/components/AdminBar",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.scss",
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"utilities/getURL"
+					],
+					"dependencies": [
+						"@payloadcms/admin-bar@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../utilities/getURL": "{{utilities/getURL}}"
+					}
+				},
+				{
+					"name": "BeforeDashboard",
+					"directory": "src/components/BeforeDashboard",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.scss",
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"@payloadcms/ui@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "BeforeLogin",
+					"directory": "src/components/BeforeLogin",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "Card",
+					"directory": "src/components/Card",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"utilities/useClickableCard",
+						"payload-types/index",
+						"components/Media"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../utilities/useClickableCard": "{{utilities/useClickableCard}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../Media": "{{components/Media}}"
+					}
+				},
+				{
+					"name": "CollectionArchive",
+					"directory": "src/components/CollectionArchive",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/Card"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../Card": "{{components/Card}}"
+					}
+				},
+				{
+					"name": "Link",
+					"directory": "src/components/Link",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"utilities/ui",
+						"payload-types/index"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../ui/button": "{{components/ui}}/button",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../payload-types": "{{payload-types/index}}"
+					}
+				},
+				{
+					"name": "LivePreviewListener",
+					"directory": "src/components/LivePreviewListener",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/getURL"
+					],
+					"dependencies": [
+						"@payloadcms/live-preview-react@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/getURL": "{{utilities/getURL}}"
+					}
+				},
+				{
+					"name": "Logo",
+					"directory": "src/components/Logo",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Logo.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"clsx@^2.1.1"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "Media",
+					"directory": "src/components/Media",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx",
+						"types.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}"
+					}
+				},
+				{
+					"name": "PageRange",
+					"directory": "src/components/PageRange",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "Pagination",
+					"directory": "src/components/Pagination",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"utilities/ui"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../ui/pagination": "{{components/ui}}/pagination",
+						"../../utilities/ui": "{{utilities/ui}}"
+					}
+				},
+				{
+					"name": "PayloadRedirects",
+					"directory": "src/components/PayloadRedirects",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/getDocument",
+						"utilities/getRedirects"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/getDocument": "{{utilities/getDocument}}",
+						"../../utilities/getRedirects": "{{utilities/getRedirects}}"
+					}
+				},
+				{
+					"name": "Testimonials",
+					"directory": "src/components/Testimonials",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"TestimonialsCard.tsx",
+						"TestimonialsCarousel.tsx",
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"payload-types/index",
+						"utilities/ui",
+						"components/Media",
+						"utilities/appendKeys"
+					],
+					"dependencies": [
+						"@radix-ui/react-avatar@^1.1.7"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../ui/carousel": "{{components/ui}}/carousel",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../Media/ImageMedia": "{{components/Media}}/ImageMedia",
+						"../Media": "{{components/Media}}",
+						"../ui/badge": "{{components/ui}}/badge",
+						"../../utilities/appendKeys": "{{utilities/appendKeys}}"
+					}
+				},
+				{
+					"name": "ui",
+					"directory": "src/components/ui",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"badge.tsx",
+						"button.tsx",
+						"card.tsx",
+						"carousel.tsx",
+						"checkbox.tsx",
+						"input.tsx",
+						"label.tsx",
+						"pagination.tsx",
+						"select.tsx",
+						"textarea.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"dependencies": [
+						"class-variance-authority@^0.7.0",
+						"@radix-ui/react-slot@^1.0.2",
+						"embla-carousel-react@^8.6.0",
+						"lucide-react@^0.378.0",
+						"@radix-ui/react-checkbox@^1.0.4",
+						"@radix-ui/react-label@^2.0.2",
+						"@radix-ui/react-select@^2.0.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "endpoints",
+			"blocks": [
+				{
+					"name": "seed",
+					"directory": "src/endpoints/seed",
+					"category": "endpoints",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"contact-form.ts",
+						"contact-page.ts",
+						"home-static.ts",
+						"home.ts",
+						"image-1.ts",
+						"image-2.ts",
+						"image-3.ts",
+						"image-hero-1.ts",
+						"index.ts",
+						"post-1.ts",
+						"post-2.ts",
+						"post-3.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "fields",
+			"blocks": [
+				{
+					"name": "defaultLexical",
+					"directory": "src/fields",
+					"category": "fields",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"defaultLexical.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "link",
+					"directory": "src/fields",
+					"category": "fields",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"link.ts"
+					],
+					"localDependencies": [
+						"utilities/deepMerge"
+					],
+					"_imports_": {
+						"../utilities/deepMerge": "{{utilities/deepMerge}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "linkGroup",
+					"directory": "src/fields",
+					"category": "fields",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"linkGroup.ts"
+					],
+					"localDependencies": [
+						"fields/link",
+						"utilities/deepMerge"
+					],
+					"_imports_": {
+						"./link": "{{fields/link}}",
+						"../utilities/deepMerge": "{{utilities/deepMerge}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "slug",
+					"directory": "src/fields/slug",
+					"category": "fields",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"SlugComponent.tsx",
+						"formatSlug.ts",
+						"index.scss",
+						"index.ts"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/ui@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				}
+			]
+		},
+		{
+			"name": "heros",
+			"blocks": [
+				{
+					"name": "HighImpact",
+					"directory": "src/heros/HighImpact",
+					"category": "heros",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"providers/HeaderTheme",
+						"payload-types/index",
+						"components/Link",
+						"components/Media",
+						"components/RichText"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../providers/HeaderTheme": "{{providers/HeaderTheme}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Link": "{{components/Link}}",
+						"../../components/Media": "{{components/Media}}",
+						"../../components/RichText": "{{components/RichText}}"
+					}
+				},
+				{
+					"name": "LowImpact",
+					"directory": "src/heros/LowImpact",
+					"category": "heros",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"components/RichText"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/RichText": "{{components/RichText}}"
+					}
+				},
+				{
+					"name": "MediumImpact",
+					"directory": "src/heros/MediumImpact",
+					"category": "heros",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"components/Link",
+						"components/Media",
+						"components/RichText"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Link": "{{components/Link}}",
+						"../../components/Media": "{{components/Media}}",
+						"../../components/RichText": "{{components/RichText}}"
+					}
+				},
+				{
+					"name": "PostHero",
+					"directory": "src/heros/PostHero",
+					"category": "heros",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/formatDateTime",
+						"payload-types/index",
+						"components/Media",
+						"utilities/formatAuthors"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/formatDateTime": "{{utilities/formatDateTime}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Media": "{{components/Media}}",
+						"../../utilities/formatAuthors": "{{utilities/formatAuthors}}"
+					}
+				},
+				{
+					"name": "RenderHero",
+					"directory": "src/heros",
+					"category": "heros",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"RenderHero.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"heros/HighImpact",
+						"heros/LowImpact",
+						"heros/MediumImpact"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}",
+						"./HighImpact": "{{heros/HighImpact}}",
+						"./LowImpact": "{{heros/LowImpact}}",
+						"./MediumImpact": "{{heros/MediumImpact}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/heros",
+					"category": "heros",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [
+						"fields/linkGroup"
+					],
+					"_imports_": {
+						"../fields/linkGroup": "{{fields/linkGroup}}"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "hooks",
+			"blocks": [
+				{
+					"name": "formatSlug",
+					"directory": "src/hooks",
+					"category": "hooks",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"formatSlug.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "populatePublishedAt",
+					"directory": "src/hooks",
+					"category": "hooks",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"populatePublishedAt.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "revalidateRedirects",
+					"directory": "src/hooks",
+					"category": "hooks",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"revalidateRedirects.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "plugins",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/plugins",
+					"category": "plugins",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"hooks/revalidateRedirects",
+						"search/fieldOverrides",
+						"search/beforeSync",
+						"payload-types/index",
+						"utilities/getURL"
+					],
+					"_imports_": {
+						"../hooks/revalidateRedirects": "{{hooks/revalidateRedirects}}",
+						"../search/fieldOverrides": "{{search/fieldOverrides}}",
+						"../search/beforeSync": "{{search/beforeSync}}",
+						"../payload-types": "{{payload-types/index}}",
+						"../utilities/getURL": "{{utilities/getURL}}"
+					},
+					"dependencies": [
+						"@payloadcms/payload-cloud@3.33.0",
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"@payloadcms/plugin-nested-docs@3.33.0",
+						"@payloadcms/plugin-redirects@3.33.0",
+						"@payloadcms/plugin-seo@3.33.0",
+						"@payloadcms/plugin-search@3.33.0",
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "providers",
+			"blocks": [
+				{
+					"name": "HeaderTheme",
+					"directory": "src/providers/HeaderTheme",
+					"category": "providers",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"providers/Theme",
+						"utilities/canUseDOM"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../Theme/types": "{{providers/Theme}}/types",
+						"../../utilities/canUseDOM": "{{utilities/canUseDOM}}"
+					}
+				},
+				{
+					"name": "Theme",
+					"directory": "src/providers/Theme",
+					"category": "providers",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx",
+						"shared.ts",
+						"types.ts"
+					],
+					"localDependencies": [
+						"utilities/canUseDOM"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/canUseDOM": "{{utilities/canUseDOM}}"
+					}
+				},
+				{
+					"name": "index",
+					"directory": "src/providers",
+					"category": "providers",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"providers/HeaderTheme",
+						"providers/Theme"
+					],
+					"_imports_": {
+						"./HeaderTheme": "{{providers/HeaderTheme}}",
+						"./Theme": "{{providers/Theme}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "search",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/search",
+					"category": "search",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"utilities/useDebounce"
+					],
+					"_imports_": {
+						"../components/ui/input": "{{components/ui}}/input",
+						"../components/ui/label": "{{components/ui}}/label",
+						"../utilities/useDebounce": "{{utilities/useDebounce}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "beforeSync",
+					"directory": "src/search",
+					"category": "search",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"beforeSync.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"@payloadcms/plugin-search@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "fieldOverrides",
+					"directory": "src/search",
+					"category": "search",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"fieldOverrides.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "utilities",
+			"blocks": [
+				{
+					"name": "appendKeys",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"appendKeys.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"uuid"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "canUseDOM",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"canUseDOM.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "deepMerge",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"deepMerge.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "formatAuthors",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"formatAuthors.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "formatDateTime",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"formatDateTime.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "generateMeta",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"generateMeta.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/mergeOpenGraph",
+						"utilities/getURL"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}",
+						"./mergeOpenGraph": "{{utilities/mergeOpenGraph}}",
+						"./getURL": "{{utilities/getURL}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "generatePreviewPath",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"generatePreviewPath.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "getDocument",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"getDocument.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"payload.config.ts/index"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}",
+						"@payload-config": "{{payload.config.ts/index}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "getGlobals",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"getGlobals.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"payload.config.ts/index"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}",
+						"@payload-config": "{{payload.config.ts/index}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "getMeUser",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"getMeUser.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/getURL"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}",
+						"./getURL": "{{utilities/getURL}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "getRedirects",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"getRedirects.ts"
+					],
+					"localDependencies": [
+						"payload.config.ts/index"
+					],
+					"_imports_": {
+						"@payload-config": "{{payload.config.ts/index}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "getURL",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"getURL.ts"
+					],
+					"localDependencies": [
+						"utilities/canUseDOM"
+					],
+					"_imports_": {
+						"./canUseDOM": "{{utilities/canUseDOM}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "mergeOpenGraph",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"mergeOpenGraph.ts"
+					],
+					"localDependencies": [
+						"utilities/getURL"
+					],
+					"_imports_": {
+						"./getURL": "{{utilities/getURL}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "toKebabCase",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"toKebabCase.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "ui",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"ui.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"clsx@^2.1.1",
+						"tailwind-merge@^2.3.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "useClickableCard",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useClickableCard.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "useDebounce",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"useDebounce.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "ArchiveBlock",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/ArchiveBlock",
+					"category": "ArchiveBlock",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"payload.config.ts/index",
+						"components/RichText",
+						"components/CollectionArchive"
+					],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"@payload-config": "{{payload.config.ts/index}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/CollectionArchive": "{{components/CollectionArchive}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/ArchiveBlock",
+					"category": "ArchiveBlock",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Banner",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/Banner",
+					"category": "Banner",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/ui",
+						"components/RichText"
+					],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/Banner",
+					"category": "Banner",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "CallToAction",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/CallToAction",
+					"category": "CallToAction",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"components/RichText",
+						"components/Link"
+					],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/Link": "{{components/Link}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/CallToAction",
+					"category": "CallToAction",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [
+						"fields/linkGroup"
+					],
+					"_imports_": {
+						"../../fields/linkGroup": "{{fields/linkGroup}}"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Content",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/Content",
+					"category": "Content",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Link"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Link": "{{components/Link}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/Content",
+					"category": "Content",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [
+						"fields/link"
+					],
+					"_imports_": {
+						"../../fields/link": "{{fields/link}}"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Form",
+			"blocks": [
+				{
+					"name": "Checkbox",
+					"directory": "src/blocks/Form/Checkbox",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/checkbox": "{{components/ui}}/checkbox",
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Component",
+					"directory": "src/blocks/Form",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"components/RichText",
+						"components/ui",
+						"Form/fields",
+						"utilities/getURL"
+					],
+					"_imports_": {
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/ui/button": "{{components/ui}}/button",
+						"./fields": "{{Form/fields}}",
+						"../../utilities/getURL": "{{utilities/getURL}}"
+					},
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "Country",
+					"directory": "src/blocks/Form/Country",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx",
+						"options.ts"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../../../components/ui/select": "{{components/ui}}/select",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Email",
+					"directory": "src/blocks/Form/Email",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/input": "{{components/ui}}/input",
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Error",
+					"directory": "src/blocks/Form/Error",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "Message",
+					"directory": "src/blocks/Form/Message",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/RichText",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/RichText": "{{components/RichText}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Number",
+					"directory": "src/blocks/Form/Number",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/input": "{{components/ui}}/input",
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Select",
+					"directory": "src/blocks/Form/Select",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../../../components/ui/select": "{{components/ui}}/select",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "State",
+					"directory": "src/blocks/Form/State",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx",
+						"options.ts"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../../../components/ui/select": "{{components/ui}}/select",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Text",
+					"directory": "src/blocks/Form/Text",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/input": "{{components/ui}}/input",
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Textarea",
+					"directory": "src/blocks/Form/Textarea",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Form/Error",
+						"Form/Width"
+					],
+					"dependencies": [
+						"@payloadcms/plugin-form-builder@3.33.0",
+						"react-hook-form@7.45.4"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/label": "{{components/ui}}/label",
+						"../../../components/ui/textarea": "{{components/ui}}/textarea",
+						"../Error": "{{Form/Error}}",
+						"../Width": "{{Form/Width}}"
+					}
+				},
+				{
+					"name": "Width",
+					"directory": "src/blocks/Form/Width",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {}
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/Form",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "fields",
+					"directory": "src/blocks/Form",
+					"category": "Form",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"fields.tsx"
+					],
+					"localDependencies": [
+						"Form/Checkbox",
+						"Form/Country",
+						"Form/Email",
+						"Form/Message",
+						"Form/Number",
+						"Form/Select",
+						"Form/State",
+						"Form/Text",
+						"Form/Textarea"
+					],
+					"_imports_": {
+						"./Checkbox": "{{Form/Checkbox}}",
+						"./Country": "{{Form/Country}}",
+						"./Email": "{{Form/Email}}",
+						"./Message": "{{Form/Message}}",
+						"./Number": "{{Form/Number}}",
+						"./Select": "{{Form/Select}}",
+						"./State": "{{Form/State}}",
+						"./Text": "{{Form/Text}}",
+						"./Textarea": "{{Form/Textarea}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "MediaBlock",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/MediaBlock",
+					"category": "MediaBlock",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Media"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Media": "{{components/Media}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/MediaBlock",
+					"category": "MediaBlock",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "RelatedPosts",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/RelatedPosts",
+					"category": "RelatedPosts",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"components/RichText",
+						"payload-types/index",
+						"components/Card"
+					],
+					"_imports_": {
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Card": "{{components/Card}}"
+					},
+					"dependencies": [
+						"clsx@^2.1.1",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Testimonials",
+			"blocks": [
+				{
+					"name": "Component",
+					"directory": "src/blocks/Testimonials",
+					"category": "Testimonials",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Component.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Testimonials"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Testimonials": "{{components/Testimonials}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "config",
+					"directory": "src/blocks/Testimonials",
+					"category": "Testimonials",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"config.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Pages",
+			"blocks": [
+				{
+					"name": "hooks",
+					"directory": "src/collections/Pages/hooks",
+					"category": "Pages",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"revalidatePage.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../payload-types": "{{payload-types/index}}"
+					}
+				},
+				{
+					"name": "index",
+					"directory": "src/collections/Pages",
+					"category": "Pages",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/authenticated",
+						"access/authenticatedOrPublished",
+						"blocks/ArchiveBlock",
+						"blocks/CallToAction",
+						"blocks/Content",
+						"blocks/Form",
+						"blocks/MediaBlock",
+						"blocks/Testimonials",
+						"heros/config",
+						"fields/slug",
+						"hooks/populatePublishedAt",
+						"utilities/generatePreviewPath",
+						"Pages/hooks"
+					],
+					"_imports_": {
+						"../../access/authenticated": "{{access/authenticated}}",
+						"../../access/authenticatedOrPublished": "{{access/authenticatedOrPublished}}",
+						"../../blocks/ArchiveBlock/config": "{{blocks/ArchiveBlock}}/config",
+						"../../blocks/CallToAction/config": "{{blocks/CallToAction}}/config",
+						"../../blocks/Content/config": "{{blocks/Content}}/config",
+						"../../blocks/Form/config": "{{blocks/Form}}/config",
+						"../../blocks/MediaBlock/config": "{{blocks/MediaBlock}}/config",
+						"../../blocks/Testimonials/config": "{{blocks/Testimonials}}/config",
+						"../../heros/config": "{{heros/config}}",
+						"../../fields/slug": "{{fields/slug}}",
+						"../../hooks/populatePublishedAt": "{{hooks/populatePublishedAt}}",
+						"../../utilities/generatePreviewPath": "{{utilities/generatePreviewPath}}",
+						"./hooks/revalidatePage": "{{Pages/hooks}}/revalidatePage"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/plugin-seo@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"blocks": [
+				{
+					"name": "hooks",
+					"directory": "src/collections/Posts/hooks",
+					"category": "Posts",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"populateAuthors.ts",
+						"revalidatePost.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../payload-types": "{{payload-types/index}}"
+					}
+				},
+				{
+					"name": "index",
+					"directory": "src/collections/Posts",
+					"category": "Posts",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/authenticated",
+						"access/authenticatedOrPublished",
+						"blocks/Banner",
+						"blocks/Code",
+						"blocks/MediaBlock",
+						"utilities/generatePreviewPath",
+						"Posts/hooks",
+						"fields/slug"
+					],
+					"_imports_": {
+						"../../access/authenticated": "{{access/authenticated}}",
+						"../../access/authenticatedOrPublished": "{{access/authenticatedOrPublished}}",
+						"../../blocks/Banner/config": "{{blocks/Banner}}/config",
+						"../../blocks/Code/config": "{{blocks/Code}}/config",
+						"../../blocks/MediaBlock/config": "{{blocks/MediaBlock}}/config",
+						"../../utilities/generatePreviewPath": "{{utilities/generatePreviewPath}}",
+						"./hooks/populateAuthors": "{{Posts/hooks}}/populateAuthors",
+						"./hooks/revalidatePost": "{{Posts/hooks}}/revalidatePost",
+						"../../fields/slug": "{{fields/slug}}"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0",
+						"@payloadcms/plugin-seo@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/collections/Users",
+					"category": "Users",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/authenticated"
+					],
+					"_imports_": {
+						"../../access/authenticated": "{{access/authenticated}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "slug",
+			"blocks": [
+				{
+					"name": "SlugComponent",
+					"directory": "src/fields/slug",
+					"category": "slug",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"SlugComponent.tsx"
+					],
+					"localDependencies": [
+						"slug/formatSlug",
+						"slug/index"
+					],
+					"_imports_": {
+						"./formatSlug": "{{slug/formatSlug}}",
+						"./index.scss": "{{slug/index}}.scss"
+					},
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/ui@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "formatSlug",
+					"directory": "src/fields/slug",
+					"category": "slug",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"formatSlug.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "index",
+					"directory": "src/fields/slug",
+					"category": "slug",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.scss"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "index",
+					"directory": "src/fields/slug",
+					"category": "slug",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"slug/formatSlug"
+					],
+					"_imports_": {
+						"./formatSlug": "{{slug/formatSlug}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "HeaderTheme",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/providers/HeaderTheme",
+					"category": "HeaderTheme",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"Theme/types",
+						"utilities/canUseDOM"
+					],
+					"_imports_": {
+						"../Theme/types": "{{Theme/types}}",
+						"../../utilities/canUseDOM": "{{utilities/canUseDOM}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Theme",
+			"blocks": [
+				{
+					"name": "InitTheme",
+					"directory": "src/providers/Theme/InitTheme",
+					"category": "Theme",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"Theme/ThemeSelector"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../ThemeSelector/types": "{{Theme/ThemeSelector}}/types"
+					}
+				},
+				{
+					"name": "ThemeSelector",
+					"directory": "src/providers/Theme/ThemeSelector",
+					"category": "Theme",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx",
+						"types.ts"
+					],
+					"localDependencies": [
+						"components/ui",
+						"Theme/index"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../components/ui/select": "{{components/ui}}/select",
+						"..": "{{Theme/index}}"
+					}
+				},
+				{
+					"name": "index",
+					"directory": "src/providers/Theme",
+					"category": "Theme",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"Theme/types",
+						"utilities/canUseDOM",
+						"Theme/shared"
+					],
+					"_imports_": {
+						"./types": "{{Theme/types}}",
+						"../../utilities/canUseDOM": "{{utilities/canUseDOM}}",
+						"./shared": "{{Theme/shared}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "shared",
+					"directory": "src/providers/Theme",
+					"category": "Theme",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"shared.ts"
+					],
+					"localDependencies": [
+						"Theme/types"
+					],
+					"_imports_": {
+						"./types": "{{Theme/types}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "types",
+					"directory": "src/providers/Theme",
+					"category": "Theme",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"types.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "BeforeLogin",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/BeforeLogin",
+					"category": "BeforeLogin",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Card",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/Card",
+					"category": "Card",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"utilities/useClickableCard",
+						"payload-types/index",
+						"Media/index"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../utilities/useClickableCard": "{{utilities/useClickableCard}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../Media": "{{Media/index}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "CollectionArchive",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/CollectionArchive",
+					"category": "CollectionArchive",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"Card/index"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../Card": "{{Card/index}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Link",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/Link",
+					"category": "Link",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"ui/button",
+						"utilities/ui",
+						"payload-types/index"
+					],
+					"_imports_": {
+						"../ui/button": "{{ui/button}}",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../payload-types": "{{payload-types/index}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "LivePreviewListener",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/LivePreviewListener",
+					"category": "LivePreviewListener",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/getURL"
+					],
+					"_imports_": {
+						"../../utilities/getURL": "{{utilities/getURL}}"
+					},
+					"dependencies": [
+						"@payloadcms/live-preview-react@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Logo",
+			"blocks": [
+				{
+					"name": "Logo",
+					"directory": "src/components/Logo",
+					"category": "Logo",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"Logo.tsx"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"clsx@^2.1.1"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Media",
+			"blocks": [
+				{
+					"name": "ImageMedia",
+					"directory": "src/components/Media/ImageMedia",
+					"category": "Media",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"Media/types",
+						"cssVariables/index",
+						"utilities/getURL"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../utilities/ui": "{{utilities/ui}}",
+						"../types": "{{Media/types}}",
+						"../../../cssVariables": "{{cssVariables/index}}",
+						"../../../utilities/getURL": "{{utilities/getURL}}"
+					}
+				},
+				{
+					"name": "VideoMedia",
+					"directory": "src/components/Media/VideoMedia",
+					"category": "Media",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"Media/types",
+						"utilities/getURL"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../../utilities/ui": "{{utilities/ui}}",
+						"../types": "{{Media/types}}",
+						"../../../utilities/getURL": "{{utilities/getURL}}"
+					}
+				},
+				{
+					"name": "index",
+					"directory": "src/components/Media",
+					"category": "Media",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"Media/types",
+						"Media/ImageMedia",
+						"Media/VideoMedia"
+					],
+					"_imports_": {
+						"./types": "{{Media/types}}",
+						"./ImageMedia": "{{Media/ImageMedia}}",
+						"./VideoMedia": "{{Media/VideoMedia}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "types",
+					"directory": "src/components/Media",
+					"category": "Media",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"types.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "PageRange",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/PageRange",
+					"category": "PageRange",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "Pagination",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/Pagination",
+					"category": "Pagination",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"ui/pagination",
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../ui/pagination": "{{ui/pagination}}",
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "PayloadRedirects",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/PayloadRedirects",
+					"category": "PayloadRedirects",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/getDocument",
+						"utilities/getRedirects"
+					],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/getDocument": "{{utilities/getDocument}}",
+						"../../utilities/getRedirects": "{{utilities/getRedirects}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "RichText",
+			"blocks": [
+				{
+					"name": "index",
+					"directory": "src/components/RichText",
+					"category": "RichText",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"blocks/MediaBlock",
+						"blocks/Code",
+						"payload-types/index",
+						"blocks/Banner",
+						"blocks/CallToAction",
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../blocks/MediaBlock/Component": "{{blocks/MediaBlock}}/Component",
+						"../../blocks/Code/Component": "{{blocks/Code}}/Component",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../blocks/Banner/Component": "{{blocks/Banner}}/Component",
+						"../../blocks/CallToAction/Component": "{{blocks/CallToAction}}/Component",
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
+			"name": "ui",
+			"blocks": [
+				{
+					"name": "badge",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"badge.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"class-variance-authority@^0.7.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "button",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"button.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"@radix-ui/react-slot@^1.0.2",
+						"class-variance-authority@^0.7.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "card",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"card.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "carousel",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"carousel.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"ui/button"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"./button": "{{ui/button}}"
+					},
+					"dependencies": [
+						"embla-carousel-react@^8.6.0",
+						"lucide-react@^0.378.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "checkbox",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"checkbox.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"@radix-ui/react-checkbox@^1.0.4",
+						"lucide-react@^0.378.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "input",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"input.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				},
+				{
+					"name": "label",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"label.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"@radix-ui/react-label@^2.0.2",
+						"class-variance-authority@^0.7.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "pagination",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"pagination.tsx"
+					],
+					"localDependencies": [
+						"ui/button",
+						"utilities/ui"
+					],
+					"_imports_": {
+						"./button": "{{ui/button}}",
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"lucide-react@^0.378.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "select",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"select.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [
+						"@radix-ui/react-select@^2.0.0",
+						"lucide-react@^0.378.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "textarea",
+					"directory": "src/components/ui",
+					"category": "ui",
+					"tests": false,
+					"subdirectory": false,
+					"list": true,
+					"files": [
+						"textarea.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					},
+					"dependencies": [],
+					"devDependencies": []
+				}
+			]
+		}
+	]
+}

@@ -6,7 +6,8 @@
     "./src/collections",
     "./src/fields",
     "./src/utilities",
-    "./src/providers"
+    "./src/providers",
+    "./src/components"
   ],
   "doNotListBlocks": [],
   "doNotListCategories": [],
@@ -15,10 +16,11 @@
   "excludeDeps": ["next", "react"],
   "includeBlocks": [],
   "includeCategories": [],
-  "excludeBlocks": [],
-  "excludeCategories": ["app"],
+  "excludeBlocks": ["RichText"],
+  "excludeCategories": ["app", "Header", "Code", "BeforeDashboard", "AdminBar"],
   "preview": false,
   "rules": {
-    "max-local-dependencies": ["warn", 20]
+    "max-local-dependencies": ["warn", 20],
+    "require-local-dependency-exists": "off"
   }
 }
