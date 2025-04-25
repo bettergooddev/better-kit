@@ -1,7 +1,7 @@
 import type { ButtonProps } from './button'
 
 import { buttonVariants } from './button'
-import { cn } from 'src/utilities/ui'
+import { cn } from '../../utilities/ui'
 import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react'
 import * as React from 'react'
 
