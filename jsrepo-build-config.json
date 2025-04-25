@@ -17,5 +17,8 @@
   "includeCategories": [],
   "excludeBlocks": [],
   "excludeCategories": ["app"],
-  "preview": false
+  "preview": false,
+  "rules": {
+    "max-local-dependencies": ["warn", 20]
+  }
 }
