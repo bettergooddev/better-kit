@@ -1,0 +1,21 @@
+{
+  "$schema": "https://unpkg.com/jsrepo@1.47.1/schemas/registry-config.json",
+  "dirs": [
+    "./src",
+    "./src/blocks",
+    "./src/collections",
+    "./src/fields",
+    "./src/utilities",
+    "./src/providers"
+  ],
+  "doNotListBlocks": [],
+  "doNotListCategories": [],
+  "listBlocks": [],
+  "listCategories": [],
+  "excludeDeps": ["next", "react"],
+  "includeBlocks": [],
+  "includeCategories": [],
+  "excludeBlocks": [],
+  "excludeCategories": ["app"],
+  "preview": false
+}
