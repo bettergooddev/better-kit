@@ -3,21 +3,14 @@
 	"dirs": [
 		"./src"
 	],
+	"doNotListBlocks": [],
+	"doNotListCategories": [],
+	"listBlocks": [],
+	"listCategories": [],
+	"excludeDeps": [],
 	"includeBlocks": [],
 	"includeCategories": [],
 	"excludeBlocks": [],
 	"excludeCategories": [],
-	"doNotListBlocks": [
-		"ui",
-		"Media"
-	],
-	"doNotListCategories": [
-		"utilities"
-	],
-	"listBlocks": [],
-	"listCategories": [],
-	"excludeDeps": [],
-	"allowSubdirectories": true,
-	"watermark": false,
 	"preview": false
 }
