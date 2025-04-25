@@ -21,7 +21,6 @@ export const ImageMedia: React.FC<MediaProps> = (props) => {
   const {
     alt: altFromProps,
     fill,
-    pictureClassName,
     imgClassName,
     priority,
     resource,
@@ -57,14 +56,14 @@ export const ImageMedia: React.FC<MediaProps> = (props) => {
         .join(', ')
 
   return (
-    <picture className={cn(pictureClassName)}>
+    <picture>
       <NextImage
         alt={alt || ''}
         className={cn(imgClassName)}
         fill={fill}
         height={!fill ? height : undefined}
-        placeholder="blur"
-        blurDataURL={placeholderBlur}
+        // placeholder="blur"
+        // blurDataURL={placeholderBlur}
         priority={priority}
         quality={100}
         loading={loading}
