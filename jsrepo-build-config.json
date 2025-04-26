@@ -18,7 +18,7 @@
   "includeCategories": [],
   "excludeBlocks": ["*"],
   "excludeCategories": ["*"],
-  "preview": false,
+  "preview": true,
   "rules": {
     "max-local-dependencies": ["warn", 20],
     "require-local-dependency-exists": "off"
