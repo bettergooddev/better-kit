@@ -16,16 +16,7 @@
   "excludeDeps": ["next", "react"],
   "includeBlocks": [],
   "includeCategories": [],
-  "excludeBlocks": [
-    "Header",
-    "Banner",
-    "CallToAction",
-    "MediaBlock",
-    "RichText",
-    "Code",
-    "AdminBar",
-    "BeforeDashboard"
-  ],
+  "excludeBlocks": [],
   "excludeCategories": [],
   "preview": true,
   "rules": {

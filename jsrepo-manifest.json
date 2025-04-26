@@ -47,6 +47,116 @@
 			"name": "blocks",
 			"blocks": [
 				{
+					"name": "Banner",
+					"directory": "src/blocks/Banner",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"utilities/ui",
+						"components/RichText"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}"
+					}
+				},
+				{
+					"name": "CallToAction",
+					"directory": "src/blocks/CallToAction",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"payload-types/index",
+						"components/RichText",
+						"components/Link",
+						"fields/linkGroup"
+					],
+					"dependencies": [
+						"payload@3.33.0",
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../components/Link": "{{components/Link}}",
+						"../../fields/linkGroup": "{{fields/linkGroup}}"
+					}
+				},
+				{
+					"name": "Code",
+					"directory": "src/blocks/Code",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"Component.client.tsx",
+						"Component.tsx",
+						"CopyButton.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"components/ui"
+					],
+					"dependencies": [
+						"prism-react-renderer@^2.3.1",
+						"@payloadcms/ui@3.33.0",
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../components/ui/button": "{{components/ui}}/button"
+					}
+				},
+				{
+					"name": "MediaBlock",
+					"directory": "src/blocks/MediaBlock",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Media"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Media": "{{components/Media}}"
+					}
+				},
+				{
 					"name": "Testimonials",
 					"directory": "src/blocks/Testimonials",
 					"category": "blocks",
@@ -125,6 +235,37 @@
 					"devDependencies": [],
 					"_imports_": {
 						"../../payload-types": "{{payload-types/index}}"
+					}
+				},
+				{
+					"name": "RichText",
+					"directory": "src/components/RichText",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"index.tsx"
+					],
+					"localDependencies": [
+						"blocks/MediaBlock",
+						"blocks/Code",
+						"payload-types/index",
+						"blocks/Banner",
+						"blocks/CallToAction",
+						"utilities/ui"
+					],
+					"dependencies": [
+						"@payloadcms/richtext-lexical@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../blocks/MediaBlock/Component": "{{blocks/MediaBlock}}/Component",
+						"../../blocks/Code/Component": "{{blocks/Code}}/Component",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../blocks/Banner/Component": "{{blocks/Banner}}/Component",
+						"../../blocks/CallToAction/Component": "{{blocks/CallToAction}}/Component",
+						"../../utilities/ui": "{{utilities/ui}}"
 					}
 				},
 				{
