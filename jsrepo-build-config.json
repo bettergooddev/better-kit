@@ -14,7 +14,7 @@
   "listBlocks": ["Testimonials"],
   "listCategories": [],
   "excludeDeps": ["next", "react"],
-  "includeBlocks": ["blocks/Testimonials", "collections/Testimonials", "components/Testimonials"],
+  "includeBlocks": ["Testimonials"],
   "includeCategories": [],
   "excludeBlocks": ["*"],
   "excludeCategories": ["*"],
