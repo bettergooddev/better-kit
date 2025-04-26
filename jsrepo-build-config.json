@@ -14,13 +14,23 @@
   "listBlocks": ["Testimonials"],
   "listCategories": [],
   "excludeDeps": ["next", "react"],
-  "includeBlocks": ["Testimonials"],
+  "includeBlocks": [],
   "includeCategories": [],
-  "excludeBlocks": ["*"],
-  "excludeCategories": ["*"],
+  "excludeBlocks": [
+    "Header",
+    "Banner",
+    "CallToAction",
+    "MediaBlock",
+    "RichText",
+    "Code",
+    "AdminBar",
+    "BeforeDashboard"
+  ],
+  "excludeCategories": [],
   "preview": true,
   "rules": {
     "max-local-dependencies": ["warn", 20],
-    "require-local-dependency-exists": "off"
+    "require-local-dependency-exists": "off",
+    "no-circular-dependency": "off"
   }
 }

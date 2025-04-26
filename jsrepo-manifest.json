@@ -1,6 +1,49 @@
 {
 	"categories": [
 		{
+			"name": "access",
+			"blocks": [
+				{
+					"name": "anyone",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"anyone.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "authenticated",
+					"directory": "src/access",
+					"category": "access",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"authenticated.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"_imports_": {
+						"../payload-types": "{{payload-types/index}}"
+					},
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": []
+				}
+			]
+		},
+		{
 			"name": "blocks",
 			"blocks": [
 				{
@@ -65,6 +108,26 @@
 			"name": "components",
 			"blocks": [
 				{
+					"name": "Media",
+					"directory": "src/components/Media",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"index.tsx",
+						"types.ts"
+					],
+					"localDependencies": [
+						"payload-types/index"
+					],
+					"dependencies": [],
+					"devDependencies": [],
+					"_imports_": {
+						"../../payload-types": "{{payload-types/index}}"
+					}
+				},
+				{
 					"name": "Testimonials",
 					"directory": "src/components/Testimonials",
 					"category": "components",
@@ -96,6 +159,82 @@
 						"../ui/badge": "{{components/ui}}/badge",
 						"../../utilities/appendKeys": "{{utilities/appendKeys}}"
 					}
+				},
+				{
+					"name": "ui",
+					"directory": "src/components/ui",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": false,
+					"files": [
+						"badge.tsx",
+						"button.tsx",
+						"card.tsx",
+						"carousel.tsx",
+						"checkbox.tsx",
+						"input.tsx",
+						"label.tsx",
+						"pagination.tsx",
+						"select.tsx",
+						"textarea.tsx"
+					],
+					"localDependencies": [
+						"utilities/ui"
+					],
+					"dependencies": [
+						"class-variance-authority@^0.7.0",
+						"@radix-ui/react-slot@^1.0.2",
+						"embla-carousel-react@^8.6.0",
+						"lucide-react@^0.378.0",
+						"@radix-ui/react-checkbox@^1.0.4",
+						"@radix-ui/react-label@^2.0.2",
+						"@radix-ui/react-select@^2.0.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "utilities",
+			"blocks": [
+				{
+					"name": "appendKeys",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"appendKeys.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"uuid"
+					],
+					"devDependencies": []
+				},
+				{
+					"name": "ui",
+					"directory": "src/utilities",
+					"category": "utilities",
+					"tests": false,
+					"subdirectory": false,
+					"list": false,
+					"files": [
+						"ui.ts"
+					],
+					"localDependencies": [],
+					"_imports_": {},
+					"dependencies": [
+						"clsx@^2.1.1",
+						"tailwind-merge@^2.3.0"
+					],
+					"devDependencies": []
 				}
 			]
 		}
