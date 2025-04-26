@@ -14,10 +14,10 @@
   "listBlocks": ["Testimonials"],
   "listCategories": [],
   "excludeDeps": ["next", "react"],
-  "includeBlocks": [],
+  "includeBlocks": ["blocks/Testimonials", "collections/Testimonials", "components/Testimonials"],
   "includeCategories": [],
-  "excludeBlocks": ["RichText"],
-  "excludeCategories": ["app", "Header", "Code", "BeforeDashboard", "AdminBar"],
+  "excludeBlocks": ["*"],
+  "excludeCategories": ["*"],
   "preview": false,
   "rules": {
     "max-local-dependencies": ["warn", 20],
