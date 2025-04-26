@@ -1,3 +1,103 @@
 {
-	"categories": []
+	"categories": [
+		{
+			"name": "blocks",
+			"blocks": [
+				{
+					"name": "Testimonials",
+					"directory": "src/blocks/Testimonials",
+					"category": "blocks",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"Component.tsx",
+						"config.ts"
+					],
+					"localDependencies": [
+						"utilities/ui",
+						"components/RichText",
+						"payload-types/index",
+						"components/Testimonials"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../../components/RichText": "{{components/RichText}}",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../components/Testimonials": "{{components/Testimonials}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "collections",
+			"blocks": [
+				{
+					"name": "Testimonials",
+					"directory": "src/collections/Testimonials",
+					"category": "collections",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"index.ts"
+					],
+					"localDependencies": [
+						"access/anyone",
+						"access/authenticated"
+					],
+					"dependencies": [
+						"payload@3.33.0"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../../access/anyone": "{{access/anyone}}",
+						"../../access/authenticated": "{{access/authenticated}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "components",
+			"blocks": [
+				{
+					"name": "Testimonials",
+					"directory": "src/components/Testimonials",
+					"category": "components",
+					"tests": false,
+					"subdirectory": true,
+					"list": true,
+					"files": [
+						"TestimonialsCard.tsx",
+						"TestimonialsCarousel.tsx",
+						"index.tsx"
+					],
+					"localDependencies": [
+						"components/ui",
+						"payload-types/index",
+						"utilities/ui",
+						"components/Media",
+						"utilities/appendKeys"
+					],
+					"dependencies": [
+						"@radix-ui/react-avatar@^1.1.7"
+					],
+					"devDependencies": [],
+					"_imports_": {
+						"../ui/carousel": "{{components/ui}}/carousel",
+						"../../payload-types": "{{payload-types/index}}",
+						"../../utilities/ui": "{{utilities/ui}}",
+						"../Media/ImageMedia": "{{components/Media}}/ImageMedia",
+						"../Media": "{{components/Media}}",
+						"../ui/badge": "{{components/ui}}/badge",
+						"../../utilities/appendKeys": "{{utilities/appendKeys}}"
+					}
+				}
+			]
+		}
+	]
 }

@@ -11,7 +11,7 @@
   ],
   "doNotListBlocks": [],
   "doNotListCategories": [],
-  "listBlocks": ["Testimonials"],
+  "listBlocks": [],
   "listCategories": [],
   "excludeDeps": ["next", "react"],
   "includeBlocks": ["Testimonials"],
