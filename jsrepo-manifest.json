@@ -70,7 +70,7 @@
 					"_imports_": {
 						"../../payload-types": "{{payload-types/index}}",
 						"../../utilities/ui": "{{utilities/ui}}",
-						"../../components/RichText": "{{components/RichText}}"
+						"@/components/RichText": "{{components/RichText}}"
 					}
 				},
 				{
@@ -97,7 +97,7 @@
 					"devDependencies": [],
 					"_imports_": {
 						"../../payload-types": "{{payload-types/index}}",
-						"../../components/RichText": "{{components/RichText}}",
+						"@/components/RichText": "{{components/RichText}}",
 						"../../components/Link": "{{components/Link}}",
 						"../../fields/linkGroup": "{{fields/linkGroup}}"
 					}
@@ -151,7 +151,7 @@
 					"devDependencies": [],
 					"_imports_": {
 						"../../utilities/ui": "{{utilities/ui}}",
-						"../../components/RichText": "{{components/RichText}}",
+						"@/components/RichText": "{{components/RichText}}",
 						"../../payload-types": "{{payload-types/index}}",
 						"../../components/Media": "{{components/Media}}"
 					}
@@ -179,7 +179,7 @@
 					"devDependencies": [],
 					"_imports_": {
 						"../../utilities/ui": "{{utilities/ui}}",
-						"../../components/RichText": "{{components/RichText}}",
+						"@/components/RichText": "{{components/RichText}}",
 						"../../payload-types": "{{payload-types/index}}",
 						"../../components/Testimonials": "{{components/Testimonials}}"
 					}
