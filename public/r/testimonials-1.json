@@ -15,7 +15,7 @@
     "carousel",
     "avatar",
     "badge",
-    "append-keys"
+    "http://localhost:3001/r/append-keys.json"
   ],
   "files": [
     {
@@ -61,7 +61,7 @@
       "target": "src/components/Testimonials-1/index.tsx"
     }
   ],
-  "docs": "Cursor instructions: \n1. Visit src/collections/Pages/index.ts and add 'import { Testimonials-1 } from '@/blocks/Testimonials-1/config'. Then, add Testimonials-1 into the list of blocks found at Pages.fields[1].tabs[1].fields[0].blocks. \n2. Visit src/blocks/RenderBlocks.tsx and add `Testimonials1Block: Testimonials-1` to the blockComponents object. \n3. Run 'npx payload generate:types'. \n4. (Optional) Run 'tsc --build' to ensure everything looks good in regards to Testimonials-1, and Testimonials1Block.",
+  "docs": "Cursor instructions: \n1. Visit src/collections/Pages/index.ts and add 'import { Testimonials1 } from '@/blocks/Testimonials-1/config'. Then, add Testimonials1 into the list of blocks found at Pages.fields[1].tabs[1].fields[0].blocks. \n2. Visit src/payload.config.ts and add 'import { Testimonials1 } from './collections/Testimonials-1'. Then, add Testimonials1 into the buildConfig.collections array. \n3. Visit src/blocks/RenderBlocks.tsx and add `Testimonials1Block: Testimonials-1` to the blockComponents object. \n4. Run 'npx payload generate:types'. \n5. (Optional) Run 'tsc --build' to ensure everything looks good in regards to Testimonials1, and Testimonials1Block.",
   "categories": [
     "blocks",
     "testimonials"
