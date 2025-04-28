@@ -1,0 +1,23 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "append-keys",
+  "type": "registry:lib",
+  "title": "Append Keys",
+  "author": "Sam Giustizia",
+  "description": "A utility function that recursively adds unique keys to objects.",
+  "dependencies": [
+    "uuid"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "src/utilities/appendKeys.ts",
+      "content": "import { v4 as uuid } from 'uuid'\n\ntype WithId = { id?: string | number | null }\ntype WithKey = { key: string }\n\n// Define options interface\ninterface AppendKeysOptions {\n  shallow?: boolean\n}\n\n// Recursive type that represents an object or array that might contain objects with IDs\ntype ObjectWithPossibleIds<T> = T extends (infer U)[]\n  ? ObjectWithPossibleIds<U>[]\n  : T extends object\n    ? {\n        [K in keyof T]: ObjectWithPossibleIds<T[K]>\n      } & WithKey // Add key to all objects, not just those with an id\n    : T\n\n/**\n * Recursively traverses an object or array and adds a 'key' property\n * generated with UUID v4 to any object that has an 'id' property\n * @param obj The object to process\n * @param options Configuration options\n * @param options.shallow When true, only adds keys to the top level objects and not to nested objects\n */\nexport const appendKeys = <T>(\n  obj: T,\n  options: AppendKeysOptions = { shallow: false },\n): ObjectWithPossibleIds<T> => {\n  // Base case: null or undefined\n  if (obj === null || obj === undefined) {\n    return obj as ObjectWithPossibleIds<T>\n  }\n\n  // Arrays: process each item\n  if (Array.isArray(obj)) {\n    return obj.map((item) => appendKeys(item, options)) as ObjectWithPossibleIds<T>\n  }\n\n  // Objects: process each property\n  if (typeof obj === 'object') {\n    const result = { ...obj } as any\n\n    // Always add a key property to objects\n    result.key = uuid()\n\n    // Process all properties recursively if not shallow\n    if (!options.shallow) {\n      for (const key in result) {\n        if (\n          Object.prototype.hasOwnProperty.call(result, key) &&\n          typeof result[key] === 'object' &&\n          result[key] !== null\n        ) {\n          result[key] = appendKeys(result[key], options)\n        }\n      }\n    }\n\n    return result as ObjectWithPossibleIds<T>\n  }\n\n  // Non-objects: return as-is\n  return obj as ObjectWithPossibleIds<T>\n}\n",
+      "type": "registry:file",
+      "target": "src/utilities/appendKeys.ts"
+    }
+  ],
+  "categories": [
+    "utilities"
+  ]
+}

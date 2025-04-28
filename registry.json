@@ -4,10 +4,71 @@
   "homepage": "http://localhost:3000",
   "items": [
     {
-      "$ref": "./registry/items/append-keys.json"
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "append-keys",
+      "type": "registry:lib",
+      "title": "Append Keys",
+      "description": "A utility function that recursively adds unique keys to objects.",
+      "author": "Sam Giustizia",
+      "registryDependencies": [],
+      "dependencies": ["uuid"],
+      "categories": ["utilities"],
+      "files": [
+        {
+          "path": "src/utilities/appendKeys.ts",
+          "target": "src/utilities/appendKeys.ts",
+          "type": "registry:file"
+        }
+      ]
     },
     {
-      "$ref": "./registry/items/testimonial-1.json"
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "testimonials-1",
+      "type": "registry:component",
+      "title": "Testimonials 1",
+      "description": "Testimonials collection, blocks, and components.  As seen on Journey Into Wellness",
+      "author": "Sam Giustizia",
+      "registryDependencies": ["button", "carousel", "avatar", "badge", "append-keys"],
+      "dependencies": ["@radix-ui/react-avatar", "payload", "react"],
+      "categories": ["blocks", "testimonials"],
+      "files": [
+        {
+          "path": "src/collections/Testimonials-1/index.ts",
+          "target": "src/collections/Testimonials-1/index.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/collections/Testimonials-1/hooks/syncTestimonialsWithPage.tsx",
+          "target": "src/collections/Testimonials-1/hooks/syncTestimonialsWithPage.tsx",
+          "type": "registry:hook"
+        },
+        {
+          "path": "src/blocks/Testimonials-1/config.ts",
+          "target": "src/blocks/Testimonials-1/config.ts",
+          "type": "registry:file"
+        },
+        {
+          "path": "src/blocks/Testimonials-1/Component.tsx",
+          "target": "src/blocks/Testimonials-1/Component.tsx",
+          "type": "registry:block"
+        },
+        {
+          "path": "src/components/Testimonials-1/TestimonialsCarousel.tsx",
+          "target": "src/components/Testimonials-1/TestimonialsCarousel.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/Testimonials-1/TestimonialsCard.tsx",
+          "target": "src/components/Testimonials-1/TestimonialsCard.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/components/Testimonials-1/index.tsx",
+          "target": "src/components/Testimonials-1/index.tsx",
+          "type": "registry:file"
+        }
+      ],
+      "docs": "Cursor instructions: \n1. Visit src/collections/Pages/index.ts and add 'import { Testimonials-1 } from '@/blocks/Testimonials-1/config'. Then, add Testimonials-1 into the list of blocks found at Pages.fields[1].tabs[1].fields[0].blocks. \n2. Visit src/blocks/RenderBlocks.tsx and add `Testimonials1Block: Testimonials-1` to the blockComponents object. \n3. Run 'npx payload generate:types'. \n4. (Optional) Run 'tsc --build' to ensure everything looks good in regards to Testimonials-1, and Testimonials1Block."
     }
   ]
 }
