@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "append-keys",
+  "type": "registry:lib",
+  "title": "Append Keys",
+  "description": "A utility function that recursively adds unique keys to objects.",
+  "author": "Sam Giustizia",
+  "registryDependencies": [],
+  "dependencies": ["uuid"],
+  "categories": ["utilities"],
+  "files": [
+    {
+      "path": "src/utilities/appendKeys.ts",
+      "target": "src/utilities/appendKeys.ts",
+      "type": "registry:file"
+    }
+  ]
+}

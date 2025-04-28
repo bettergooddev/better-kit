@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "better-kit",
+  "homepage": "http://localhost:3000",
+  "items": [
+    {
+      "$ref": "./registry/items/append-keys.json"
+    },
+    {
+      "$ref": "./registry/items/testimonial-1.json"
+    }
+  ]
+}
