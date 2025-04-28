@@ -72,6 +72,7 @@ export interface Config {
     media: Media;
     categories: Category;
     users: User;
+    testimonials1: Testimonials1;
     redirects: Redirect;
     forms: Form;
     'form-submissions': FormSubmission;
@@ -88,6 +89,7 @@ export interface Config {
     media: MediaSelect<false> | MediaSelect<true>;
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
+    testimonials1: Testimonials1Select<false> | Testimonials1Select<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
@@ -191,7 +193,7 @@ export interface Page {
       | null;
     media?: (string | null) | Media;
   };
-  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock)[];
+  layout: (CallToActionBlock | ContentBlock | MediaBlock | ArchiveBlock | FormBlock | Testimonials1Block)[];
   meta?: {
     title?: string | null;
     /**
@@ -729,6 +731,38 @@ export interface Form {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Testimonials1Block".
+ */
+export interface Testimonials1Block {
+  heading: string;
+  /**
+   * This field automatically includes all testimonials
+   */
+  testimonials?: (string | Testimonials1)[] | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'testimonials1';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "testimonials1".
+ */
+export interface Testimonials1 {
+  id: string;
+  standout: string;
+  body: string;
+  offering?: ('product-1' | 'product-2' | 'product-3') | null;
+  author: {
+    name: string;
+    role: string;
+    image: string | Media;
+  };
+  name?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -920,6 +954,10 @@ export interface PayloadLockedDocument {
         value: string | User;
       } | null)
     | ({
+        relationTo: 'testimonials1';
+        value: string | Testimonials1;
+      } | null)
+    | ({
         relationTo: 'redirects';
         value: string | Redirect;
       } | null)
@@ -1017,6 +1055,7 @@ export interface PagesSelect<T extends boolean = true> {
         mediaBlock?: T | MediaBlockSelect<T>;
         archive?: T | ArchiveBlockSelect<T>;
         formBlock?: T | FormBlockSelect<T>;
+        testimonials1?: T | Testimonials1BlockSelect<T>;
       };
   meta?:
     | T
@@ -1113,6 +1152,16 @@ export interface FormBlockSelect<T extends boolean = true> {
   form?: T;
   enableIntro?: T;
   introContent?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Testimonials1Block_select".
+ */
+export interface Testimonials1BlockSelect<T extends boolean = true> {
+  heading?: T;
+  testimonials?: T;
   id?: T;
   blockName?: T;
 }
@@ -1275,6 +1324,25 @@ export interface UsersSelect<T extends boolean = true> {
   hash?: T;
   loginAttempts?: T;
   lockUntil?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "testimonials1_select".
+ */
+export interface Testimonials1Select<T extends boolean = true> {
+  standout?: T;
+  body?: T;
+  offering?: T;
+  author?:
+    | T
+    | {
+        name?: T;
+        role?: T;
+        image?: T;
+      };
+  name?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
